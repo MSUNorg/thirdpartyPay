@@ -55,7 +55,7 @@ public class RefundDetail implements Serializable {
     }
 
     /**
-     * 格式化退款数据 {@link me.hao0.alipay.model.enums.AlipayField#DETAIL_DATA}
+     * 格式化退款数据 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#DETAIL_DATA}
      * 
      * @return 退款数据
      */
