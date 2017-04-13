@@ -14,28 +14,28 @@ public class PayDetail implements Serializable {
     private static final long serialVersionUID = 5892926888312847503L;
 
     /**
-     * 我方唯一订单号 {@link me.hao0.alipay.model.enums.AlipayField#OUT_TRADE_NO}
+     * 我方唯一订单号 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#OUT_TRADE_NO}
      */
     protected String          outTradeNo;
 
     /**
-     * 商品名称 {@link me.hao0.alipay.model.enums.AlipayField#ORDER_NAME}
+     * 商品名称 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#ORDER_NAME}
      */
     protected String          orderName;
 
     /**
-     * 商品金额(元) {@link me.hao0.alipay.model.enums.AlipayField#TOTAL_FEE}
+     * 商品金额(元) {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#TOTAL_FEE}
      */
     protected String          totalFee;
 
     /**
-     * 支付宝后置通知url，若为空，则使用Alipay类中的notifyUrl {@link me.hao0.alipay.model.enums.AlipayField#NOTIFY_URL}
+     * 支付宝后置通知url，若为空，则使用Alipay类中的notifyUrl {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#NOTIFY_URL}
      */
     @AlipayOptional
     protected String          notifyUrl;
 
     /**
-     * 支付宝前端跳转url，若为空，则使用Alipay类中的returnUrl {@link me.hao0.alipay.model.enums.AlipayField#RETURN_URL}
+     * 支付宝前端跳转url，若为空，则使用Alipay类中的returnUrl {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#RETURN_URL}
      */
     @AlipayOptional
     protected String          returnUrl;

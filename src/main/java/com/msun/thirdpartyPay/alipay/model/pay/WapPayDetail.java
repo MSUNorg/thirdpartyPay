@@ -12,49 +12,49 @@ public class WapPayDetail extends PayDetail {
     private static final long serialVersionUID = -4046847553452516114L;
 
     /**
-     * 商品展示网址 {@link me.hao0.alipay.model.enums.AlipayField#SHOW_URL}
+     * 商品展示网址 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#SHOW_URL}
      */
     @AlipayOptional
     private String            showUrl;
 
     /**
-     * 手机支付宝token {@link me.hao0.alipay.model.enums.AlipayField#EXTERN_TOKEN}
+     * 手机支付宝token {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#EXTERN_TOKEN}
      */
     @AlipayOptional
     private String            externToken;
 
     /**
-     * 航旅订单其它费用 {@link me.hao0.alipay.model.enums.AlipayField#OTHER_FEE}
+     * 航旅订单其它费用 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#OTHER_FEE}
      */
     @AlipayOptional
     private String            otherFee;
 
     /**
-     * 航旅订单金额 {@link me.hao0.alipay.model.enums.AlipayField#AIR_TICKET}
+     * 航旅订单金额 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#AIR_TICKET}
      */
     @AlipayOptional
     private String            airTicket;
 
     /**
-     * 是否发起实名校验 {@link me.hao0.alipay.model.enums.AlipayField#RN_CHECK}
+     * 是否发起实名校验 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#RN_CHECK}
      */
     @AlipayOptional
     private String            rnCheck;
 
     /**
-     * 买家证件号码 {@link me.hao0.alipay.model.enums.AlipayField#BUYER_CERT_NO}
+     * 买家证件号码 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#BUYER_CERT_NO}
      */
     @AlipayOptional
     private String            buyerCertNo;
 
     /**
-     * 买家真实姓名 {@link me.hao0.alipay.model.enums.AlipayField#BUYER_REAL_NAME}
+     * 买家真实姓名 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#BUYER_REAL_NAME}
      */
     @AlipayOptional
     private String            buyerRealName;
 
     /**
-     * 收单场景 {@link me.hao0.alipay.model.enums.AlipayField#SCENE}
+     * 收单场景 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#SCENE}
      */
     @AlipayOptional
     private String            scene;

@@ -13,31 +13,31 @@ public class AppPayDetail extends PayDetail {
     private static final long serialVersionUID = 7265488308580697604L;
 
     /**
-     * 客户端号，标识客户端 {@link me.hao0.alipay.model.enums.AlipayField#APP_ID}
+     * 客户端号，标识客户端 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#APP_ID}
      */
     @AlipayOptional
     private String            appId;
 
     /**
-     * 客户端来源 {@link me.hao0.alipay.model.enums.AlipayField#APPENV}
+     * 客户端来源 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#APPENV}
      */
     @AlipayOptional
     private String            appenv;
 
     /**
-     * 是否发起实名校验 {@link me.hao0.alipay.model.enums.AlipayField#RN_CHECK}
+     * 是否发起实名校验 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#RN_CHECK}
      */
     @AlipayOptional
     private String            rnCheck;
 
     /**
-     * 授权令牌(32) {@link me.hao0.alipay.model.enums.AlipayField#EXTERN_TOKEN}
+     * 授权令牌(32) {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#EXTERN_TOKEN}
      */
     @AlipayOptional
     private String            externToken;
 
     /**
-     * 商户业务扩展参数 {@link me.hao0.alipay.model.enums.AlipayField#OUT_CONTEXT}
+     * 商户业务扩展参数 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#OUT_CONTEXT}
      */
     @AlipayOptional
     private String            outContext;
@@ -50,7 +50,7 @@ public class AppPayDetail extends PayDetail {
     /**
      * 商品类型
      * 
-     * @see me.hao0.alipay.model.enums.GoodsType
+     * @see com.msun.thirdpartyPay.alipay.model.enums.GoodsType
      */
     @AlipayOptional
     private GoodsType         goodsType;

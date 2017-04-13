@@ -15,18 +15,18 @@ public class RefundDetail implements Serializable {
     private static final long      serialVersionUID = -145560925778001071L;
 
     /**
-     * 服务器异步通知页面路径 {@link me.hao0.alipay.model.enums.AlipayField#NOTIFY_URL}
+     * 服务器异步通知页面路径 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#NOTIFY_URL}
      */
     @AlipayOptional
     private String                 notifyUrl;
 
     /**
-     * 退款批次号 {@link me.hao0.alipay.model.enums.AlipayField#BATCH_NO}
+     * 退款批次号 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#BATCH_NO}
      */
     private String                 batchNo;
 
     /**
-     * 单笔数据集 {@link me.hao0.alipay.model.enums.AlipayField#DETAIL_DATA}
+     * 单笔数据集 {@link com.msun.thirdpartyPay.alipay.model.enums.AlipayField#DETAIL_DATA}
      */
     private List<RefundDetailData> detailDatas;
 
