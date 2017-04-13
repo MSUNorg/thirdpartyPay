@@ -15,72 +15,72 @@ public class PayRequest implements Serializable {
     private static final long serialVersionUID = 2219327746650221239L;
 
     /**
-     * 商品描述 {@link me.hao0.wepay.model.enums.WepayField#BODY}
+     * 商品描述 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#BODY}
      */
     private String            body;
 
     /**
-     * 业务系统唯一订单号 {@link me.hao0.wepay.model.enums.WepayField#OUT_TRADE_NO}
+     * 业务系统唯一订单号 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#OUT_TRADE_NO}
      */
     private String            outTradeNo;
 
     /**
-     * 总金额(分) {@link me.hao0.wepay.model.enums.WepayField#TOTAL_FEE}
+     * 总金额(分) {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#TOTAL_FEE}
      */
     private Integer           totalFee;
 
     /**
-     * 客户端IP {@link me.hao0.wepay.model.enums.WepayField#SPBILL_CREATE_IP}
+     * 客户端IP {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#SPBILL_CREATE_IP}
      */
     private String            clientId;
 
     /**
-     * 通知URL {@link me.hao0.wepay.model.enums.WepayField#NOTIFY_URL}
+     * 通知URL {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#NOTIFY_URL}
      */
     private String            notifyUrl;
 
     /**
-     * 设备号 {@link me.hao0.wepay.model.enums.WepayField#DEVICE_INFO}
+     * 设备号 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#DEVICE_INFO}
      */
     @WepayOptional
     private String            deviceInfo;
 
     /**
-     * 附加信息 {@link me.hao0.wepay.model.enums.WepayField#ATTACH}
+     * 附加信息 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#ATTACH}
      */
     @WepayOptional
     private String            attach;
 
     /**
-     * 商品详情 {@link me.hao0.wepay.model.enums.WepayField#DETAIL}
+     * 商品详情 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#DETAIL}
      */
     @WepayOptional
     private String            detail;
 
     /**
-     * 货币类型 {@link me.hao0.wepay.model.enums.WepayField#FEE_TYPE}
+     * 货币类型 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#FEE_TYPE}
      */
     private FeeType           feeType          = FeeType.CNY;
 
     /**
-     * 交易开始时间 {@link me.hao0.wepay.model.enums.WepayField#TIME_START}
+     * 交易开始时间 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#TIME_START}
      */
     private String            timeStart;
 
     /**
-     * 交易结束时间 {@link me.hao0.wepay.model.enums.WepayField#TIME_EXPIRE}
+     * 交易结束时间 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#TIME_EXPIRE}
      */
     @WepayOptional
     private String            timeExpire;
 
     /**
-     * 商品标记 {@link me.hao0.wepay.model.enums.WepayField#GOODS_TAG}
+     * 商品标记 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#GOODS_TAG}
      */
     @WepayOptional
     private String            goodsTag;
 
     /**
-     * 指定支付方式 {@link me.hao0.wepay.model.enums.WepayField#LIMIT_PAY}
+     * 指定支付方式 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#LIMIT_PAY}
      */
     @WepayOptional
     private String            limitPay;

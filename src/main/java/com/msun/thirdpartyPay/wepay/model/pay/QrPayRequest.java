@@ -11,7 +11,7 @@ public class QrPayRequest extends PayRequest {
 
     private static final long serialVersionUID = -4991817824772641424L;
     /**
-     * 商品ID {@link me.hao0.wepay.model.enums.WepayField#PRODUCT_ID}
+     * 商品ID {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#PRODUCT_ID}
      */
     @WepayOptional(any = false)
     private String            productId;

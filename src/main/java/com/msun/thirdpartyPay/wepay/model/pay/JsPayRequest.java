@@ -9,7 +9,7 @@ public class JsPayRequest extends PayRequest {
 
     private static final long serialVersionUID = 8394359425337364208L;
     /**
-     * 用户标识 {@link me.hao0.wepay.model.enums.WepayField#OPEN_ID}
+     * 用户标识 {@link com.msun.thirdpartyPay.wepay.model.enums.WepayField#OPEN_ID}
      */
     private String            openId;
 
