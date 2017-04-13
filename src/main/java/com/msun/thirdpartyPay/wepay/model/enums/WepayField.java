@@ -278,7 +278,7 @@ public final class WepayField {
     /**
      * 退款渠道
      * 
-     * @see me.hao0.wepay.model.enums.RefundChannel
+     * @see com.msun.thirdpartyPay.wepay.model.enums.RefundChannel
      */
     public static final String REFUND_CHANNEL           = "refund_channel";
 

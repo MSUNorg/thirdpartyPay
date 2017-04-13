@@ -117,7 +117,7 @@ public class Bills extends Component {
      * @param deviceInfo 微信支付分配的终端设备号，填写此字段，只下载该设备号的对账单
      * @param date 账单的日期
      * @param type 账单类型
-     * @see me.hao0.wepay.model.enums.BillType
+     * @see com.msun.thirdpartyPay.wepay.model.enums.BillType
      * @return 账单数据
      */
     public String query(String deviceInfo, String date, BillType type) {
