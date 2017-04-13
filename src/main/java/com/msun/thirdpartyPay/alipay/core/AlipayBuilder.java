@@ -18,6 +18,7 @@ public final class AlipayBuilder {
 
     /**
      * 仅需要APP支付时，可以不配置secret
+     * 
      * @param merchantId 商户编号
      * @return this builder
      */
@@ -27,6 +28,7 @@ public final class AlipayBuilder {
 
     /**
      * Set email account
+     * 
      * @param email email account
      * @return this
      */
@@ -37,6 +39,7 @@ public final class AlipayBuilder {
 
     /**
      * Set the charset of the merchant，ex. utf-8、gbk、gb2312，default is utf-8
+     * 
      * @param charset charset
      * @return this
      */
@@ -47,7 +50,8 @@ public final class AlipayBuilder {
 
     /**
      * Set the Payment type
-     * @see me.hao0.alipay.model.enums.PaymentType
+     * 
+     * @see com.msun.thirdpartyPay.alipay.model.enums.PaymentType
      * @param type the payment type
      * @return this
      */
@@ -80,50 +84,55 @@ public final class AlipayBuilder {
 
     /**
      * 设置APP RSA私钥
+     * 
      * @param rsaPriKey RSA私钥
      * @return this
      */
-    public AlipayBuilder appPriKey(String rsaPriKey){
+    public AlipayBuilder appPriKey(String rsaPriKey) {
         alipay.appPriKey = rsaPriKey;
         return this;
     }
 
     /**
      * 设置APP RSA公钥
+     * 
      * @param rsaPubKey RSA公钥
      * @return this
      */
-    public AlipayBuilder appPubKey(String rsaPubKey){
+    public AlipayBuilder appPubKey(String rsaPubKey) {
         alipay.appPubKey = rsaPubKey;
         return this;
     }
 
     /**
      * 设置二维码RSA私钥
+     * 
      * @param rsaPriKey RSA私钥
      * @return this
      */
-    public AlipayBuilder qrPriKey(String rsaPriKey){
+    public AlipayBuilder qrPriKey(String rsaPriKey) {
         alipay.qrPriKey = rsaPriKey;
         return this;
     }
 
     /**
      * 设置二维码 RSA公钥
+     * 
      * @param rsaPubKey RSA公钥
      * @return this
      */
-    public AlipayBuilder qrPubKey(String rsaPubKey){
+    public AlipayBuilder qrPubKey(String rsaPubKey) {
         alipay.qrPubKey = rsaPubKey;
         return this;
     }
 
     /**
      * 设置支付超时时间
+     * 
      * @param payExpired 超时时间
      * @return this
      */
-    public AlipayBuilder payExpired(String payExpired){
+    public AlipayBuilder payExpired(String payExpired) {
         alipay.expired = payExpired;
         return this;
     }

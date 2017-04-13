@@ -52,7 +52,7 @@ public class Jsons {
      * 
      * @param target target object
      * @return json string
-     * @throws me.hao0.common.exception.JsonException the exception for json
+     * @throws com.msun.thirdpartyPay.support.exception.JsonException the exception for json
      */
     public String toJson(Object target) {
         try {
