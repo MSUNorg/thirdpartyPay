@@ -40,14 +40,14 @@ public class Pays extends Component {
     }
 
     /**
-     * WAP支付
+     * WEB支付
      * 
-     * @param wapPayDetail 支付字段信息
-     * @return 自动提交表单(可直接输出到浏览器)
+     * @param webPayDetail 支付字段信息
+     * @return GET请求URL
      */
-    public String wapPayUrl(WapPayDetail wapPayDetail) {
-        Map<String, String> wapPayParams = buildWapPayParams(wapPayDetail);
-        return buildPayURL(wapPayParams);
+    public String webPayUrl(WebPayDetail webPayDetail) {
+        Map<String, String> payParams = buildWebPayParams(webPayDetail);
+        return buildPayURL(payParams);
     }
 
     /**
@@ -103,6 +103,17 @@ public class Pays extends Component {
     public String wapPay(WapPayDetail wapPayDetail) {
         Map<String, String> wapPayParams = buildWapPayParams(wapPayDetail);
         return buildPayForm(wapPayParams);
+    }
+
+    /**
+     * WAP支付
+     * 
+     * @param wapPayDetail 支付字段信息
+     * @return GET请求URL
+     */
+    public String wapPayUrl(WapPayDetail wapPayDetail) {
+        Map<String, String> wapPayParams = buildWapPayParams(wapPayDetail);
+        return buildPayURL(wapPayParams);
     }
 
     /**
