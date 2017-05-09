@@ -40,6 +40,38 @@ public class Pays extends Component {
     }
 
     /**
+     * WAP支付
+     * 
+     * @param wapPayDetail 支付字段信息
+     * @return 自动提交表单(可直接输出到浏览器)
+     */
+    public String wapPayUrl(WapPayDetail wapPayDetail) {
+        Map<String, String> wapPayParams = buildWapPayParams(wapPayDetail);
+        return buildPayURL(wapPayParams);
+    }
+
+    /**
+     * 构建支付URL
+     * 
+     * @param payParams 支付参数
+     * @return 支付表单
+     */
+    private String buildPayURL(Map<String, String> payParams) {
+        StringBuilder url = new StringBuilder();
+        url.append(Alipay.GATEWAY)//
+        .append(AlipayField.INPUT_CHARSET + "=")//
+        .append(alipay.inputCharset);
+        for (Map.Entry<String, String> param : payParams.entrySet()) {
+            try {
+                url.append("&" + param.getKey()).append("=" + java.net.URLEncoder.encode(param.getValue(), "UTF-8"));
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+        }
+        return url.toString();
+    }
+
+    /**
      * 构建PC支付参数
      * 
      * @param webPayDetail 字段集合
